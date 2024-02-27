@@ -1012,10 +1012,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0ad7271441a0e84c851240219e3d128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1871717284}
   smoothing: 0.1
-  maxPos: {x: 0, y: 0}
-  minPos: {x: 0, y: 0}
+  maxPos: {x: 100, y: 100}
+  minPos: {x: -100, y: -100}
 --- !u!1 &1871717281
 GameObject:
   m_ObjectHideFlags: 0
