@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 519052433}
   - component: {fileID: 519052432}
   - component: {fileID: 519052435}
+  - component: {fileID: 519052436}
   m_Layer: 0
   m_Name: target
   m_TagString: Untagged
@@ -350,6 +351,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1871717281}
   speed: 1
+--- !u!114 &519052436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519052431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b9b903a841af24e8ecb06734f02932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
 --- !u!1 &625166845
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +667,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -42}
   m_SizeDelta: {x: 1500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1277772842
@@ -675,7 +690,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Default text because yes, or something
+  m_text: Default Text Default Text Default Text Default Text Default Text Default
+    Text Default Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -738,7 +754,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -73.7793, y: 0, z: -69.14978, w: 83.96825}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -789,7 +805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -200}
+  m_AnchoredPosition: {x: 0, y: -234}
   m_SizeDelta: {x: -200, y: -600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1427094400
@@ -806,9 +822,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1277772842}
   lines:
-  - Game that is gaming gaming
-  - Numbers 12 3 4 5 6
-  textSpeed: 0.2
+  - Welcome to Game!
+  - Here are the rules.
+  - 1. dont die
+  - 1.1 dont die
+  - 2. live
+  - 3. have fun???
+  textSpeed: 0.1
 --- !u!114 &1427094401
 MonoBehaviour:
   m_ObjectHideFlags: 0

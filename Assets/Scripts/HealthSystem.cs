@@ -21,7 +21,7 @@ public class HealthSystem : MonoBehaviour
         
     }
 
-    void TakeDamage(int amount)
+    public void TakeDamage(int amount)
     {
         currentHealth -= amount;
 
@@ -31,7 +31,7 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    void Heal(int amount)
+    public void Heal(int amount)
     {
         currentHealth += amount;
 
