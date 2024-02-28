@@ -2,15 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class EnemyAttack : MonoBehaviour
 {
-
-    float timeEnd = 3f;
-    float timer;
-    
     AttributesManager attribute;
-
-    int damage = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,30 +14,14 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-
-        if(timeEnd <= timer)
-        {
-            Destroy(gameObject);
-            timer = 0;
-        }
-
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "enemy")
+        if (collision.gameObject.tag == "Player")
         {
             attribute.DealDamage(collision.gameObject);
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Destroy(gameObject);
-    }
-
-
-
-    
 }
